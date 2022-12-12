@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+
+    <script src="js/main.js" defer></script>
+    <title>JG | Generador de Imagenes</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  </head>
+  <body>
+    <div class="body">
+
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h2>JG | Generador de Imagenes</h2>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="https://github.com/jeroginaca/JG-Generador-de-Imagenes.git" target="_blank"
+                >Ver el código</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="showcase">
+        <form id="image-form">
+          <h1>Describe <br> Una Imagen</h1>
+          <div class="form-control">
+            <input type="text" id="prompt" placeholder="Escribe aquí..." />
+          </div>
+          <!-- size -->
+          <div class="form-control">
+            <select name="size" id="size">
+              <option value="small">Pequeña</option>
+              <option value="medium" selected>Mediana</option>
+              <option value="large">Grande</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Generar</button>
+        </form>
+      </section>
+
+      <section class="image">
+        <div class="image-container">
+          <h2 class="msg"></h2>
+          <img src="" alt="" id="image" />
+        </div>
+      </section>
+    </main>
+  </div>
+    <footer>
+      <div class="footer-container">
+        <p>Realizada por <a href="https://www.jeronimoginaca.com" target="_blank">Jerónimo Ginaca</a> con <a href="https://beta.openai.com/docs/introduction" target="_blank" > OpenAI</a></p>
+      </div>
+    </footer>
+
+    <div class="spinner"></div>
+
+          
+
+  </body>
+</html>

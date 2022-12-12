@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #9554b4;
+}
+
+body{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: black;
+  height: 100%;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,225,253,0) 100%), url(../img/72ppi/bg.png) ;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ /* background: linear-gradient(317deg, rgba(252,0,116,1) 13%, rgba(0,225,253,1) 100%);
+ */  
+}
+
+/* Navbar */
+.navbar {
+  background: transparent;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color:rgba(0,225,253,1);
+}
+
+/* Showcase */
+.showcase {
+  
+  margin: 0 auto;
+  /*height: 600px;
+  width: 50%;*/
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/72ppi/pantalla.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  padding: 7rem;
+}
+
+.showcase h1 {
+  
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.showcase form {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.showcase form input,
+form select {
+  font-family: 'Press Start 2P', cursive;
+
+  font-size: 20px;
+  width: 500px;
+  max-width: 500px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+form button {
+  font-family: 'Press Start 2P', cursive;
+
+  font-size: 20px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #4DFEAD;
+  color: #111;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  transform: scale(1.1);
+}
+
+/* Image */
+
+.image {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.msg {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+}
+
+@media (max-width: 900px) {
+.showcase {
+  width: 90%;
+  height: 100%;
+  background-image: url(../img/72ppi/pantalla.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  padding: 7rem;
+}
+}
+
+@media (max-width: 600px) {
+
+  .navbar a {
+  display: none;
+  }
+  
+  .showcase{
+    background-image: none;
+  }
+
+  .showcase h1 { 
+    margin-top: 3rem;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .showcase form {
+    height: 100%;
+    width: 90%;
+  }
+
+  .form-control{
+    width: 22rem;
+  }
+  
+  .showcase form input,
+  form select {  
+    font-size: 16px;
+    max-width: 100%;
+
+  }
+  
+  form button {
+    font-family: 'Press Start 2P', cursive;
+  
+    font-size: 20px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background: #4DFEAD;
+    color: #111;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  form button:hover {
+    transform: scale(1.1);
+  }
+
+}
